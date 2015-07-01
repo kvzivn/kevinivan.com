@@ -49,7 +49,13 @@ p {
 
 @media (max-width: 1200px) {
   h1 {
-    font-size: 3em;
+    font-size: 5em;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
   }
 
   p {
@@ -57,23 +63,25 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
   }
 
   .container {
-    margin-left: 55px;
+    margin-left: 35px;
   }
 
   .icons {
-    padding-left: 30px;
+    padding-left: 50px;
   }
 
   .icon {
     display: block;
     margin-top: 25px;
+    width: 35px;
+    height: 35px;
   }
 }
 
