@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Helvetica, sans-serif;
   color: #2a2a2a;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 100;
   font-size: 8em;
   opacity: 0.8;
@@ -29,6 +29,14 @@ h1 {
 p {
   line-height: 1.7em;
   opacity: 0.9;
+}
+
+.medium-screen {
+  display: none;
+}
+
+.small-screen {
+  display: none;
 }
 
 .about {
@@ -47,43 +55,92 @@ p {
   margin-right: 15px;
 }
 
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 5em;
-  }
-
-  .icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 40px;
-  }
-
-  p {
-    display: none;
-  }
+.top {
+  margin-top: 15px;
 }
 
-@media (max-width: 700px) {
+.mid {
+  margin-top: 15px;
+}
+
+.low {
+  margin-top: 15px;
+}
+
+
+/* large screens */
+@media (max-width: 1200px) {
   h1 {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 7em;
   }
 
   .container {
     margin-left: 35px;
   }
 
-  .icons {
-    padding-left: 50px;
-  }
-
-  .icon {
-    display: block;
-    margin-top: 25px;
-    width: 35px;
-    height: 35px;
+  p {
+    font-size: 0.9em;
   }
 }
+
+
+
+/* medium screens */
+@media (max-width: 1010px) {
+  h1 {
+    font-size: 5.5em;
+  }
+
+  .container {
+    margin-left: 20px;
+  }
+
+  .large-screen {
+    display: none;
+  }
+
+  .medium-screen {
+    display: inline-block;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+
+
+/* small screens */
+@media (max-width: 740px) {
+  h1 {
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+  p {
+    font-size: 0.85em;
+  }
+
+  .container {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+
+  .large-screen {
+    display: none;
+  }
+
+  .medium-screen {
+    display: none;
+  }
+
+  .small-screen {
+    display: inline-block;
+  }
+}
+
+
 
 .resume {
   text-decoration: underline !important;
