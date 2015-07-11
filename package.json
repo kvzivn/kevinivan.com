@@ -1,0 +1,18 @@
+{
+  "name": "kevinivan.com",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvzivn/kevinivan.com.git"
+  },
+  "author": "Kevin Ivan <hello@kevinivan.com> (http://kevinivan.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-stylus": "^2.0.5"
+  }
+}
