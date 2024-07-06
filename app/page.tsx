@@ -165,7 +165,7 @@ export default function Home() {
             </div>
 
             <h1 className="mt-8 text-2xl leading-10 font-serif subpixel-antialiased opacity-90">
-              I'm a product designer that loves to code.{" "}
+              I'm a UX designer that loves to code.{" "}
               <br className="hidden sm:block" />
               Currently based in <s>Toronto</s> Malmö.
             </h1>
