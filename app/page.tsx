@@ -164,7 +164,7 @@ export default function Home() {
               )}
             </div>
 
-            <h1 className="mt-8 text-2xl leading-10 font-serif font-regular">
+            <h1 className="mt-8 text-2xl leading-10 font-serif subpixel-antialiased opacity-90">
               I'm a product designer that loves to code.{" "}
               <br className="hidden sm:block" />
               Currently based in <s>Toronto</s> Malmö.
@@ -178,7 +178,7 @@ export default function Home() {
             </p>
 
             <div className="mt-10">
-              <h6 className="font-mono uppercase font-medium tracking-widest text-[0.7rem]">
+              <h6 className="font-mono uppercase font-medium tracking-widest text-[0.65rem]">
                 work experience
               </h6>
 
