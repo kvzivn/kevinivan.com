@@ -16,30 +16,40 @@ export default function Home() {
       role: "Design Engineer",
       time: "2023 –",
       logo: "/logos/teamspark.svg",
+      link: "https://teamspark.xyz",
+      hover: "hover:bg-[#e0e2da]/50",
     },
     {
       company: "ETHGlobal",
       role: "UX Engineer",
       time: "2022 – 2023",
       logo: "/logos/ethglobal.svg",
+      link: "https://ethglobal.com",
+      hover: "hover:bg-[#e0e2da]/50",
     },
     {
       company: "Jayway",
       role: "Frontend Developer",
       time: "2021 – 2022",
       logo: "/logos/devoteam.svg",
+      link: "https://devoteam.com",
+      hover: "hover:bg-[#e0e2da]/80",
     },
     {
       company: "You X Ventures",
       role: "UX Developer",
       time: "2019 – 2021",
       logo: "/logos/youx.svg",
+      link: "https://x.com/youxventures",
+      hover: "hover:bg-[#dbddd4]/50",
     },
     {
       company: "Oakwood Creative ",
       role: "Frontend Developer",
       time: "2016 – 2018",
       logo: "/logos/oakwood.svg",
+      link: "https://oakwood.se",
+      hover: "hover:bg-[#d8dad1]/50",
     },
   ]
 
@@ -184,9 +194,15 @@ export default function Home() {
 
               <div className="mt-1 divide-y divide-n2">
                 {jobs.map((job) => (
-                  <div
+                  <a
                     key={job.company}
-                    className="flex items-center gap-4 py-5"
+                    href={job.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      `flex items-center gap-4 py-5 -mx-4 px-4 rounded-lg transition-colors`,
+                      job.hover
+                    )}
                   >
                     <Image
                       src={job.logo}
@@ -215,7 +231,7 @@ export default function Home() {
                         )}
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
