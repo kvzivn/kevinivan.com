@@ -27,38 +27,44 @@ const config: Config = {
         inter: ["var(--font-inter)"],
       },
       keyframes: {
-        wobble: {
+        scale: {
+          from: {
+            transform: "scale3d(1, 1, 1)",
+          },
+          "50%": {
+            transform: "scale3d(0.8, 0.8, 0.8)",
+          },
+          to: {
+            transform: "scale3d(1, 1, 1)",
+          },
+        },
+        "fan-left": {
           from: {
             transform: "translate3d(0, 0, 0)",
           },
-
-          "15%": {
-            transform: "translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -5deg)",
+          "50%": {
+            transform: "translate3d(-2rem, 5%, 0) rotate3d(0, 0, 1, -12deg)",
           },
-
-          "30%": {
-            transform: "translate3d(10%, 0, 0) rotate3d(0, 0, 1, 3deg)",
-          },
-
-          "45%": {
-            transform: "translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -3deg)",
-          },
-
-          "60%": {
-            transform: "translate3d(2%, 0, 0) rotate3d(0, 0, 1, 2deg)",
-          },
-
-          "75%": {
-            transform: "translate3d(-2%, 0, 0) rotate3d(0, 0, 1, -1deg)",
-          },
-
           to: {
+            transform: "translate3d(0, 0, 0) scale3d(0.98, 0.98, 0.98)",
+          },
+        },
+        "fan-right": {
+          from: {
             transform: "translate3d(0, 0, 0)",
+          },
+          "50%": {
+            transform: "translate3d(2rem, 5%, 0) rotate3d(0, 0, 1, 12deg)",
+          },
+          to: {
+            transform: "translate3d(0, 0, 0) scale3d(0.98, 0.98, 0.98)",
           },
         },
       },
       animation: {
-        wobble: "wobble 1s 2.5s",
+        scale: "scale 1.75s 2.25s",
+        "fan-left": "fan-left 1.75s 2.25s forwards",
+        "fan-right": "fan-right 1.75s 2.25s forwards",
       },
     },
   },

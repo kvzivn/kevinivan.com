@@ -28,7 +28,7 @@ export default function Home() {
       hover: "hover:bg-[#e0e2da]/50",
     },
     {
-      company: "Jayway",
+      company: "Devoteam",
       role: "Frontend Developer",
       time: "2021 – 2022",
       logo: "/logos/devoteam.svg",
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             <div
-              className="relative w-[112px] h-[112px] shadow-lg animate-wobble rounded-xl cursor-pointer"
+              className="relative w-[112px] h-[112px] shadow-lg rounded-xl cursor-pointer"
               onClick={handleClick}
               onMouseEnter={handleHover}
               onMouseLeave={handleMouseLeave}
@@ -140,7 +140,7 @@ export default function Home() {
                 height={112}
                 quality={100}
                 priority
-                className="rounded-xl"
+                className="relative rounded-xl z-10 animate-scale"
               />
 
               {Array.from({ length: 25 }, (_, i) => (
@@ -153,8 +153,10 @@ export default function Home() {
                   quality={100}
                   priority
                   className={cn(
-                    "absolute top-0 rounded-xl transition-opacity duration-100",
-                    showImage === i + 1 ? "opacity-100" : "opacity-0"
+                    "absolute top-0 rounded-xl",
+                    showImage === i + 1 ? "opacity-100 z-20" : "opacity-0",
+                    i === 12 && "opacity-100 animate-fan-left",
+                    i === 17 && "opacity-100 animate-fan-right"
                   )}
                 />
               ))}
