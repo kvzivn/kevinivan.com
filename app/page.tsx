@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             <div
-              className="relative w-[112px] h-[112px] shadow-lg rounded-xl cursor-pointer"
+              className="relative w-[112px] h-[112px] rounded-xl cursor-pointer"
               onClick={handleClick}
               onMouseEnter={handleHover}
               onMouseLeave={handleMouseLeave}
@@ -155,8 +155,8 @@ export default function Home() {
                   className={cn(
                     "absolute top-0 rounded-xl",
                     showImage === i + 1 ? "opacity-100 z-20" : "opacity-0",
-                    i === 12 && "opacity-100 animate-fan-left",
-                    i === 17 && "opacity-100 animate-fan-right"
+                    i === 17 && "opacity-100 animate-fan-right-1",
+                    i === 10 && "opacity-100 animate-fan-right-2"
                   )}
                 />
               ))}

@@ -28,43 +28,61 @@ const config: Config = {
       },
       keyframes: {
         scale: {
-          from: {
-            transform: "scale3d(1, 1, 1)",
+          "0%": {
+            transform: "scale(1)",
+          },
+          "35%": {
+            transform: "scale(0.9)",
           },
           "50%": {
-            transform: "scale3d(0.8, 0.8, 0.8)",
+            transform: "scale(0.9)",
           },
-          to: {
-            transform: "scale3d(1, 1, 1)",
+          "65%": {
+            transform: "scale(0.9)",
           },
-        },
-        "fan-left": {
-          from: {
-            transform: "translate3d(0, 0, 0)",
-          },
-          "50%": {
-            transform: "translate3d(-2rem, 5%, 0) rotate3d(0, 0, 1, -12deg)",
-          },
-          to: {
-            transform: "translate3d(0, 0, 0) scale3d(0.98, 0.98, 0.98)",
+          "100%": {
+            transform: "scale(1)",
           },
         },
-        "fan-right": {
-          from: {
+        "fan-right-1": {
+          "0%": {
             transform: "translate3d(0, 0, 0)",
+          },
+          "35%": {
+            transform: "translate3d(2rem, 5%, 0) rotate3d(0, 0, 1, 12deg)",
           },
           "50%": {
             transform: "translate3d(2rem, 5%, 0) rotate3d(0, 0, 1, 12deg)",
           },
-          to: {
+          "65%": {
+            transform: "translate3d(2rem, 5%, 0) rotate3d(0, 0, 1, 12deg)",
+          },
+          "100%": {
+            transform: "translate3d(0, 0, 0) scale3d(0.98, 0.98, 0.98)",
+          },
+        },
+        "fan-right-2": {
+          "0%": {
+            transform: "translate3d(0, 0, 0)",
+          },
+          "35%": {
+            transform: "translate3d(4rem, 6%, 0) rotate3d(0, 0, 1, 14deg)",
+          },
+          "50%": {
+            transform: "translate3d(4rem, 6%, 0) rotate3d(0, 0, 1, 14deg)",
+          },
+          "65%": {
+            transform: "translate3d(4rem, 6%, 0) rotate3d(0, 0, 1, 14deg)",
+          },
+          "100%": {
             transform: "translate3d(0, 0, 0) scale3d(0.98, 0.98, 0.98)",
           },
         },
       },
       animation: {
-        scale: "scale 1.75s 2.25s",
-        "fan-left": "fan-left 1.75s 2.25s forwards",
-        "fan-right": "fan-right 1.75s 2.25s forwards",
+        scale: "scale 3.5s 2.25s forwards",
+        "fan-right-1": "fan-right-1 3.5s 2.25s forwards",
+        "fan-right-2": "fan-right-2 3.5s 2.35s forwards",
       },
     },
   },
