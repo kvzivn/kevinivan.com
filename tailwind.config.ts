@@ -65,13 +65,13 @@ const config: Config = {
           "0%": {
             transform: "translate3d(0, 0, 0)",
           },
-          "35%": {
+          "45%": {
             transform: "translate3d(4rem, 6%, 0) rotate3d(0, 0, 1, 14deg)",
           },
           "50%": {
             transform: "translate3d(4rem, 6%, 0) rotate3d(0, 0, 1, 14deg)",
           },
-          "65%": {
+          "55%": {
             transform: "translate3d(4rem, 6%, 0) rotate3d(0, 0, 1, 14deg)",
           },
           "100%": {
@@ -80,9 +80,9 @@ const config: Config = {
         },
       },
       animation: {
-        scale: "scale 3.5s 2.25s forwards",
-        "fan-right-1": "fan-right-1 3.5s 2.25s forwards",
-        "fan-right-2": "fan-right-2 3.5s 2.35s forwards",
+        scale: "scale 3.5s 2.15s forwards",
+        "fan-right-1": "fan-right-1 3.5s 2.15s forwards",
+        "fan-right-2": "fan-right-2 3.5s 2.25s forwards",
       },
     },
   },

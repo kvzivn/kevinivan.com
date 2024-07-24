@@ -106,8 +106,8 @@ export default function Home() {
           }}
           className="fixed inset-x-0 top-0 bottom-0 overflow-auto"
         >
-          <main className="relative max-w-[36rem] flex flex-col mx-auto pt-16 pb-12 sm:pt-32 sm:pb-24 px-8 sm:px-0">
-            <div className="absolute top-16 sm:top-32 right-8 sm:right-0 flex gap-2 items-center justify-center">
+          <main className="relative max-w-[36rem] flex flex-col mx-auto pt-16 pb-12 sm:pt-24 sm:pb-24 px-8 sm:px-0">
+            <div className="absolute top-16 sm:top-24 right-8 sm:right-0 flex gap-2 items-center justify-center">
               {socials.map((social) => (
                 <a
                   key={social.url}
