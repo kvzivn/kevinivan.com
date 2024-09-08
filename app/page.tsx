@@ -185,7 +185,7 @@ export default function Home() {
             <p className="mt-5 leading-7">
               I'm driven by creating joyful, intuitive interactions, with an
               obsession for small details. I love good copy and try to sprinkle
-              humour into my work wherever I see fit. I'm also into really cool
+              humor into my work wherever I see fit. I'm also into really cool
               stuff like ultimate frisbee, yoga, and naps.
             </p>
 
