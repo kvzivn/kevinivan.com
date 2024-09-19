@@ -205,7 +205,7 @@ export default function Home() {
                 projects
               </h6>
 
-              <div className="mt-1 divide-y divide-n2">
+              <div className="mt-1">
                 {projects.map((project) => (
                   <a
                     key={project.company}
@@ -213,7 +213,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={cn(
-                      `flex items-center gap-4 py-5 -mx-4 px-4 rounded-lg transition-colors`,
+                      `flex items-center gap-4 py-6 -mx-4 px-4 rounded-lg transition-colors`,
                       project.hover
                     )}
                   >
@@ -252,7 +252,7 @@ export default function Home() {
                 work experience
               </h6>
 
-              <div className="mt-1 divide-y divide-n2">
+              <div className="mt-1">
                 {jobs.map((job) => (
                   <a
                     key={job.company}
