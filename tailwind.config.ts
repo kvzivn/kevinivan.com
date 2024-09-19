@@ -81,8 +81,8 @@ const config: Config = {
       },
       animation: {
         scale: "scale 3.5s 2.15s forwards",
-        "fan-right-1": "fan-right-1 3.5s 2.15s forwards",
-        "fan-right-2": "fan-right-2 3.5s 2.25s forwards",
+        "fan-right-1": "fan-right-1 3.15s 2.15s forwards",
+        "fan-right-2": "fan-right-2 3.15s 2.25s forwards",
       },
     },
   },
