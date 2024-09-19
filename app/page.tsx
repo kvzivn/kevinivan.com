@@ -10,11 +10,22 @@ export default function Home() {
   const [stopShow, setStopShow] = useState(false)
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
+  const projects = [
+    {
+      company: "AI tool that helps you retain knowledge.",
+      role: "Recap",
+      time: "2024 –",
+      logo: "/logos/recap.svg",
+      link: "https://getrecap.xyz",
+      hover: "hover:bg-[#e0e2da]/50",
+    },
+  ]
+
   const jobs = [
     {
       company: "Spark + Mint",
       role: "Design Engineer",
-      time: "2023 –",
+      time: "2023 – 2024",
       logo: "/logos/teamspark.svg",
       link: "https://teamspark.xyz",
       hover: "hover:bg-[#e0e2da]/50",
@@ -191,6 +202,53 @@ export default function Home() {
 
             <div className="mt-10">
               <h6 className="font-mono uppercase font-medium tracking-widest text-[0.65rem]">
+                projects
+              </h6>
+
+              <div className="mt-1 divide-y divide-n2">
+                {projects.map((project) => (
+                  <a
+                    key={project.company}
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      `flex items-center gap-4 py-5 -mx-4 px-4 rounded-lg transition-colors`,
+                      project.hover
+                    )}
+                  >
+                    <Image
+                      src={project.logo}
+                      alt={project.company}
+                      width={42}
+                      height={42}
+                      priority
+                      className="opacity-80"
+                    />
+
+                    <div className="flex items-center justify-between w-full">
+                      <div>
+                        <div className="text-[0.85rem] sm:text-[0.925rem]">
+                          {project.role}
+                        </div>
+                        <div className="max-w-40 sm:max-w-none mt-px text-[0.825rem] sm:text-sm text-n5">
+                          {project.company}
+                        </div>
+                      </div>
+                      <div className="text-n5 font-inter text-[0.825rem] sm:text-sm tabular-nums">
+                        {project.time}
+                        {project.time === "2024 –" ? (
+                          <span className="opacity-0"> 2024</span>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+
+              <h6 className="mt-10 font-mono uppercase font-medium tracking-widest text-[0.65rem]">
                 work experience
               </h6>
 
