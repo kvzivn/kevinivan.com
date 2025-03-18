@@ -118,7 +118,7 @@ export default function Home() {
           }}
           className="fixed inset-x-0 top-0 bottom-0 overflow-auto"
         >
-          <main className="relative max-w-[36rem] flex flex-col mx-auto pt-16 pb-12 sm:pt-24 sm:pb-24 px-8 sm:px-0">
+          <main className="relative max-w-[34rem] flex flex-col mx-auto pt-16 pb-12 sm:pt-24 sm:pb-24 px-8 sm:px-0">
             <div className="absolute top-16 sm:top-24 right-8 sm:right-0 flex gap-2 items-center justify-center">
               {socials.map((social) => (
                 <a
@@ -195,10 +195,10 @@ export default function Home() {
             </h1>
 
             <p className="mt-5 leading-7">
-              I'm driven by creating joyful, intuitive interactions, with an
-              obsession for small details. I love good copy and try to sprinkle
-              humor into my work wherever I see fit. I'm also into really cool
-              stuff like ultimate frisbee, yoga, and naps.
+              I really care about how interfaces look and feel, and I'm obsessed
+              with details. I love good copy and try to sprinkle humor into my
+              work wherever I see fit. I'm also into really cool stuff like
+              ultimate frisbee, yoga, and naps.
             </p>
 
             <div className="mt-10">
