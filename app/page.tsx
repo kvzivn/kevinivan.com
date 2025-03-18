@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image"
 import Curve from "@/app/components/Curve"
 import { useRef, useState } from "react"
@@ -23,11 +24,11 @@ export default function Home() {
 
   const jobs = [
     {
-      company: "Spark + Mint",
+      company: "Foytech",
       role: "Design Engineer",
-      time: "2023 – 2024",
-      logo: "/logos/teamspark.svg",
-      link: "https://teamspark.xyz",
+      time: "2024 –",
+      logo: "/logos/foytech.svg",
+      link: "https://foytech.se",
       hover: "hover:bg-[#e0e2da]/50",
     },
     {
@@ -284,7 +285,7 @@ export default function Home() {
                       </div>
                       <div className="text-n5 font-inter text-[0.825rem] sm:text-sm tabular-nums">
                         {job.time}
-                        {job.time === "2023 –" ? (
+                        {job.time === "2024 –" ? (
                           <span className="opacity-0"> 2024</span>
                         ) : (
                           ""
