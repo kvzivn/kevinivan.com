@@ -20,6 +20,14 @@ export default function Home() {
       link: "https://getrecap.xyz",
       hover: "hover:bg-[#e0e2da]/50",
     },
+    {
+      company: "Website for a local business.",
+      role: "Oat Canada",
+      time: "2022 – 2023",
+      logo: "/logos/oatcanada.svg",
+      link: "https://oatcanada.com",
+      hover: "hover:bg-[#e0e2da]/50",
+    },
   ]
 
   const jobs = [
@@ -203,7 +211,7 @@ export default function Home() {
 
             <div className="mt-10">
               <h6 className="font-mono uppercase font-medium tracking-widest text-[0.65rem]">
-                projects
+                projects i'm proud of
               </h6>
 
               <div className="mt-0.5">
